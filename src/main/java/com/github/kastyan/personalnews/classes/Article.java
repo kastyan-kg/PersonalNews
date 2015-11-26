@@ -1,4 +1,4 @@
-package com.github.kastyan.slownewsspringmvc.classes;
+package com.github.kastyan.personalnews.classes;
 
 import javax.persistence.*;
 import javax.xml.bind.annotation.XmlElement;

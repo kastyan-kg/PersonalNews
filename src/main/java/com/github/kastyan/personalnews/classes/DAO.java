@@ -1,5 +1,5 @@
 
-package com.github.kastyan.slownewsspringmvc.classes;
+package com.github.kastyan.personalnews.classes;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -42,7 +42,7 @@ public class DAO {
 
     public List <Article> getNews(){
 
-        Rss rss = webTarget.request().get().readEntity(com.github.kastyan.slownewsspringmvc.classes.Rss.class);
+        Rss rss = webTarget.request().get().readEntity(com.github.kastyan.personalnews.classes.Rss.class);
         List <Article> articleList = rss.getArticleList();
         return articleList;
     }

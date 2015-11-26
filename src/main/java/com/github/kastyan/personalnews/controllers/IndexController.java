@@ -1,7 +1,7 @@
-package com.github.kastyan.slownewsspringmvc.controllers;
+package com.github.kastyan.personalnews.controllers;
 
-import com.github.kastyan.slownewsspringmvc.classes.DAO;
-import com.github.kastyan.slownewsspringmvc.classes.Rss;
+import com.github.kastyan.personalnews.classes.DAO;
+import com.github.kastyan.personalnews.classes.Rss;
 
 import javax.ws.rs.client.WebTarget;
 
@@ -21,9 +21,9 @@ public class IndexController {
     @RequestMapping(value = "/news.html")
     public ModelAndView showNews(){
 
-        final ModelAndView mav = new ModelAndView("WEB-INF/views/login.html");
+        final ModelAndView mav = new ModelAndView("WEB-INF/views/home/login.html");
 
-        Rss rss = webTarget.request().get().readEntity(com.github.kastyan.slownewsspringmvc.classes.Rss.class);
+        Rss rss = webTarget.request().get().readEntity(com.github.kastyan.personalnews.classes.Rss.class);
        
         mav.addObject("rss", rss);
         return mav;

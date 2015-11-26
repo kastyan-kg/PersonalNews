@@ -1,4 +1,4 @@
-package com.github.kastyan.slownewsspringmvc.classes;
+package com.github.kastyan.personalnews.classes;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
